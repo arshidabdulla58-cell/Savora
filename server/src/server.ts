@@ -27,6 +27,9 @@ app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/budgets", budgetRoutes);
 app.use("/api/goals", goalsRouter);
 
+app.get("/healthz", (req, res) => {
+  res.json({ status: "ok" });
+});
 // Test route
 app.get("/", (req, res) => {
   res.json({
@@ -52,6 +55,6 @@ app.get("/api/test-db", async (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT,"0.0.0.0", () => {
   console.log(`Savora server running on http://localhost:${PORT}`);
 });

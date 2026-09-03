@@ -80,6 +80,15 @@ function Login() {
             {loading ? "Signing in..." : "Sign in"}
           </button>
         </form>
+        <p className="auth-switch">
+  Don't have an account?{" "}
+  <button
+    type="button"
+    onClick={() => navigate("/register")}
+  >
+    Create account
+  </button>
+</p>
       </div>
     </div>
   );

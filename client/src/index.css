@@ -7061,3 +7061,26 @@ a {
     gap: 8px;
   }
 }
+.auth-switch {
+  margin-top: 24px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.auth-switch button {
+  width: auto;
+  padding: 0;
+  margin-left: 4px;
+  background: transparent;
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: none;
+  border: none;
+}
+
+.auth-switch button:hover {
+  transform: none;
+  box-shadow: none;
+  text-decoration: underline;
+}
